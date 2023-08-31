@@ -33,25 +33,19 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
-
 class BayesClassifier:
-
 
   def __init__(self):
     self.clf=GaussianNB()
 
-
   def fit(self,X,y):
     self.clf.fit(X,y)
-
 
   def predict(self,X):
     return self.clf.predict(X)
 
-
 iris=load_iris()
 X_train,X_test,y_train,y_test=train_test_split(iris.data,iris.target,test_size=0.3,random_state=38)
-
 
 clf=BayesClassifier()
 
@@ -64,7 +58,7 @@ print("Accuracy:",accuracy)
 ~~~
 
 ## Output:
-![image]()
+![output](https://github.com/Hemapriya-2004/Bayes-Classifier/blob/main/a2.png)
 
 ## Result:
 Hence, Bayes classifier for iris dataset is implemented successfully
